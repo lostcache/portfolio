@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Harsh Devisha</h1>
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab('research')">Research Papers</button>
+            <button class="tab-button" onclick="showTab('projects')">Projects</button>
+        </div>
+        <div id="research" class="tab-content">
+            <h2>Research Papers</h2>
+            <ul>
+                <li><a href="#">Paper Title 1</a> - Brief description or abstract</li>
+                <li><a href="#">Paper Title 2</a> - Brief description or abstract</li>
+                <li><a href="#">Paper Title 3</a> - Brief description or abstract</li>
+            </ul>
+        </div>
+        <div id="projects" class="tab-content" style="display: none;">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a> - Short project description</li>
+                <li><a href="#">Project 2</a> - Short project description</li>
+                <li><a href="#">Project 3</a> - Short project description</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
