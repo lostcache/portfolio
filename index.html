@@ -5,42 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harsh Devisha's Portfolio</title>
     <style>
-        /* Solarized Light Theme Colors */
-        :root {
-            --base03: #002b36;
-            --base02: #073642;
-            --base01: #586e75;
-            --base00: #657b83;
-            --base0: #839496;
-            --base1: #93a1a1;
-            --base2: #eee8d5;
-            --base3: #fdf6e3;
-            --yellow: #b58900;
-            --orange: #cb4b16;
-            --red: #dc322f;
-            --magenta: #d33682;
-            --violet: #6c71c4;
-            --blue: #268bd2;
-            --cyan: #2aa198;
-            --green: #859900;
-        }
-
         body {
-            font-family: Consolas, "Courier New", monospace;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: var(--base3);
-            color: var(--base00);
+            background-color: #f9f9f9;
+            color: #333;
             text-align: center;
         }
 
         .header {
-            background-color: var(--base2);
-            color: var(--base03);
+            background-color: #4CAF50;
+            color: white;
             padding: 20px;
             width: 100%;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -65,7 +45,7 @@
         }
 
         .nav ul li a {
-            color: var(--blue);
+            color: white;
             text-decoration: none;
             font-size: 1.2em;
         }
@@ -79,21 +59,21 @@
             max-width: 900px;
             width: 100%;
             margin: 20px auto;
-            background-color: var(--base2);
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
 
         .section h2 {
-            color: var(--cyan);
+            color: #4CAF50;
             margin-bottom: 10px;
             text-align: center;
         }
 
         .footer {
-            background-color: var(--base2);
-            color: var(--base03);
+            background-color: #4CAF50;
+            color: white;
             padding: 10px;
             width: 100%;
             position: fixed;
@@ -116,7 +96,7 @@
         }
 
         .project-list a {
-            color: var(--blue);
+            color: #4CAF50;
             text-decoration: none;
             font-weight: bold;
         }
@@ -138,11 +118,13 @@
     <section id="projects" class="section project-list">
         <h2>Projects/Work</h2>
         <ul>
-            <li><a href="#" target="_blank">CV Generator</a> - A company internal tool I developed while working at my previous role</li>
-            <li><a href="#" target="_blank">1Label</a> - The project I was assigned to at my previous role</li>
-            <li><a href="https://visualizing-sorting-algorithms-54gw.onrender.com/" target="_blank">Sorting Visualizer</a> - A fun project I developed while learning Typescript and React</li>
-            <li><a href="#" target="_blank">Battery Remaining Useful Capacity Estimation</a> - Developed predictive models using regression and neural networks to estimate battery health, achieving a mean squared error (MSE) below 10%. Preprocessed over 10GB of EIS (Electrochemical Impedance Spectroscopy) data to ensure model accuracy.</li>
-            <li><a href="#" target="_blank">Signal Processing</a> - Built a sorting algorithm visualizer in React and TypeScript, enabling real-time exploration of algorithms like Bubble Sort, Merge Sort, and Quick Sort. Integrated visual representations of the complexity of time and space to enhance user understanding.</li>
+            <li><a href="https://order.1-label.com/" target="_blank">1Label</a> - The project I was assigned to at my previous role</li>
+            <li><a href="https://cvgenerator.nexuslinkservices.com/login" target="_blank">CV Generator</a> - A company internal tool I developed while working at my previous role</li>
+            <li><a href="https://github.com/notsoharshdevisha/Visualizing-Sorting-Algorithms" target="_blank">Sorting Visualizer</a> - A fun project I developed while learning Typescript and React</li>
+            <li><a href="https://github.com/notsoharshdevisha/Battery-Remaining-Useful-Capacity-Estimation" target="_blank">Battery Remaining Useful Capacity Estimation</a> - Developed predictive models using regression and neural networks to estimate battery health, achieving a mean squared error (MSE) below 10%. Preprocessed over 10GB of EIS (Electrochemical Impedance Spectroscopy) data to ensure model accuracy.</li>
+            <li><a href="https://github.com/notsoharshdevisha/signal_processing" target="_blank">Signal Processing</a> - Enhanced data quality by improving signal-to-noise ratio by 10% using advanced 1-D and 2-D signal processing
+techniques. Applied Fast Fourier Transform (FFT) and convolution for noise reduction and extracted key features
+for machine learning applications.</li>
         </ul>
     </section>
 
