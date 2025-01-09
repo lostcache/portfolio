@@ -1,37 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Harsh Devisha's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .nav ul li {
+            display: inline;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <header class="header">
         <h1>Harsh Devisha</h1>
-        <div class="tabs">
-            <button class="tab-button" onclick="showTab('research')">Research Papers</button>
-            <button class="tab-button" onclick="showTab('projects')">Talks</button>
-        </div>
-        <div id="research" class="tab-content">
-            <h2>Papers I Like</h2>
+        <nav class="nav">
             <ul>
-                <li><a href="#">Paper Title 1</a> - Brief description or abstract</li>
-                <li><a href="#">Paper Title 2</a> - Brief description or abstract</li>
-                <li><a href="#">Paper Title 3</a> - Brief description or abstract</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-        <div id="projects" class="tab-content" style="display: none;">
-            <h2>Talks I Like</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=IroPQ150F6c" target="_blank">Andrew Kelley Practical Data Oriented Design (DoD)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=BH2jvJ74npM" target="_blank">TigerBeetle - A Million Financial Transactions per Second in Zig</a></li>
-                <li><a href="https://www.youtube.com/watch?v=I_TtMk5z0O0" target="_blank">System Jitter and Where to Find It: A Whack-a-Mole Experience</a></li>
-                <li><a href="https://www.youtube.com/watch?v=v1CmGbOGb2I" target="_blank">Why OCaml</a></li>
-                <li><a href="https://www.youtube.com/watch?v=7VSVfQcaxFY" target="_blank">How 1 Software Engineer Outperforms 138 - Lichess Case Study</a></li>
-            </ul>
-        </div>
-    </div>
-    <script src="script.js"></script>
+        </nav>
+    </header>
+
+    <section id="about" class="section text-center">
+        <h2>About Me</h2>
+        <p>Hello! I'm Harsh, a passionate software developer and data specialist with keen interest in distributed systems and systems programming...</p>
+    </section>
+
+    <section id="resume" class="section text-left">
+        <h2>Resume</h2>
+        <h3>Junior Software Engineer</h3>
+        <p>Nexuslink Services</p>
+        <ul>
+            <li>Implemented JWT-based authentication, increasing account recovery success</li>
+            <li>Developed web applications with React, reducing page load times</li>
+        </ul>
+
+        <h3>Data Specialist</h3>
+        <p>LMU Career and Professional Development</p>
+        <ul>
+            <li>Automated data pipelines, boosting productivity</li>
+            <li>Analyzed trends leading to improved student engagement</li>
+        </ul>
+    </section>
+       
+    <section id="projects" class="section text-left">
+        <h2>Projects</h2>
+        
+        <h4><a href="https://github.com/your-github-link/sorting-visualizer">Sorting Visualizer</a></h4>
+        <p>Created an educational tool for visualizing sorting algorithms using React and TypeScript.</p>
+        
+        <h4><a href="https://github.com/your-github-link/battery-estimation">Battery Remaining Useful Capacity Estimation</a></h4>
+        <p>Built machine learning models to predict battery health with high accuracy.</p>
+    </section>    
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Interested in discussing potential collaborations or opportunities? Feel free to reach out!</p>
+        <ul>
+            <li>Email: <a href="mailto:harshdevisha91@gmail.com">harshdevisha91@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/harsh-devisha-4504b82b8/">linkedin.com/in/harsh-devisha</a></li>
+            <li>GitHub: <a href="https://github.com/lostcache">github.com/lostcache</a> | <a href="https://github.com/notsoharshdevisha">github.com/notsoharshdevisha</a></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Harsh Devisha. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
