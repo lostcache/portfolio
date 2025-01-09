@@ -5,53 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harsh Devisha's Portfolio</title>
     <style>
+        /* Solarized Light Palette */
+        :root {
+            --base03: #002b36;
+            --base02: #073642;
+            --base01: #586e75;
+            --base00: #657b83;
+            --base0: #839496;
+            --base1: #93a1a1;
+            --base2: #eee8d5;
+            --base3: #fdf6e3;
+            --yellow: #b58900;
+            --orange: #cb4b16;
+            --blue: #268bd2;
+            --green: #859900;
+            --purple: #6c71c4;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Consolas, "Courier New", monospace;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: var(--base3);
+            color: var(--base00);
             text-align: center;
         }
 
         .header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: var(--base2);
+            color: var(--base03);
             padding: 20px;
             width: 100%;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid var(--base01);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .header h1 {
             margin: 0;
             font-size: 2.5em;
-        }
-
-        .nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .nav ul li {
-            display: inline;
-        }
-
-        .nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        .nav ul li a:hover {
-            text-decoration: underline;
+            font-weight: bold;
         }
 
         .section {
@@ -59,32 +54,50 @@
             max-width: 900px;
             width: 100%;
             margin: 20px auto;
-            background-color: white;
+            background-color: var(--base3);
+            border: 1px solid var(--base1);
             border-radius: 8px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
 
         .section h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
+            color: var(--blue);
+            margin-bottom: 15px;
+            font-size: 1.8em;
             text-align: center;
+        }
+
+        a {
+            color: var(--purple);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--blue);
         }
 
         .footer {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
+            background-color: var(--base2);
+            color: var(--base03);
+            padding: 15px;
             width: 100%;
-            position: fixed;
-            bottom: 0;
             text-align: center;
+            font-size: 0.9em;
+            border-top: 2px solid var(--base01);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .footer p {
-            margin: 0;
+        ul {
+            padding-left: 20px;
         }
 
+        li {
+            margin: 10px 0;
+        }
+
+        /* Project List Enhancements */
         .project-list ul {
             list-style-type: none;
             padding: 0;
@@ -93,16 +106,17 @@
 
         .project-list li {
             margin-bottom: 15px;
+            color: var(--base00);
+            font-size: 1.1em;
         }
 
         .project-list a {
-            color: #4CAF50;
-            text-decoration: none;
             font-weight: bold;
+            font-size: 1em;
         }
 
-        .project-list a:hover {
-            text-decoration: underline;
+        .header h1 {
+            color: var(--green);
         }
     </style>
 </head>
@@ -112,6 +126,7 @@
     </header>
 
     <section id="about" class="section">
+        <h2>About Me</h2>
         <p>Hello! I'm Harsh, a passionate software developer and data specialist with a keen interest in distributed systems and systems programming.</p>
     </section>
 
@@ -122,9 +137,7 @@
             <li><a href="https://cvgenerator.nexuslinkservices.com/login" target="_blank">CV Generator</a> - A company internal tool I developed while working at my previous role</li>
             <li><a href="https://visualizing-sorting-algorithms-54gw.onrender.com/" target="_blank">Sorting Visualizer</a> - A fun project I developed while learning Typescript and React</li>
             <li><a href="https://github.com/notsoharshdevisha/Battery-Remaining-Useful-Capacity-Estimation" target="_blank">Battery Remaining Useful Capacity Estimation</a> - Developed predictive models using regression and neural networks to estimate battery health, achieving a mean squared error (MSE) below 10%. Preprocessed over 10GB of EIS (Electrochemical Impedance Spectroscopy) data to ensure model accuracy.</li>
-            <li><a href="https://github.com/notsoharshdevisha/signal_processing" target="_blank">Signal Processing</a> - Enhanced data quality by improving signal-to-noise ratio by 10% using advanced 1-D and 2-D signal processing
-techniques. Applied Fast Fourier Transform (FFT) and convolution for noise reduction and extracted key features
-for machine learning applications.</li>
+            <li><a href="https://github.com/notsoharshdevisha/signal_processing" target="_blank">Signal Processing</a> - Enhanced data quality by improving signal-to-noise ratio by 10% using advanced 1-D and 2-D signal processing techniques.</li>
         </ul>
     </section>
 
@@ -137,7 +150,7 @@ for machine learning applications.</li>
                 <a href="https://github.com/lostcache">github.com/lostcache</a> | 
                 <a href="https://github.com/notsoharshdevisha">github.com/notsoharshdevisha</a>
             </li>
-            <li><a href="/assets/resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="./assets/Harsh_Devisha_Resume.pdf" target="_blank" download="Harsh_Devisha_Resume">Resume</a></li>
         </ul>
     </section>
    
